@@ -1,0 +1,11 @@
+# Build directories
+build/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+thumbs.db
