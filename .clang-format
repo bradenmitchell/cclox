@@ -1,0 +1,24 @@
+# Documentation
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+# Disabling formatting on a piece of code
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#disabling-formatting-on-a-piece-of-code
+# Example:
+#   int formatted_code;
+#   // clang-format off
+#       void    unformatted_code  ;
+#   // clang-format on
+#   void formatted_code_again;
+---
+BasedOnStyle: LLVM
+
+ColumnLimit: 80
+IndentWidth: 2
+
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+BreakConstructorInitializers: AfterColon
+IndentCaseLabels: true
+PackConstructorInitializers: Never
+PointerAlignment: Left
+SpacesBeforeTrailingComments: 2

@@ -1,0 +1,9 @@
+target_sources(lox
+    PRIVATE
+        main.cc
+        chunk.cc
+        chunk.h
+        debug.cc
+        debug.h
+        opcode.h
+)
